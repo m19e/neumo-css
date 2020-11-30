@@ -17,12 +17,25 @@ const App = () => (
                 <Divider dense style={{ margin: "8px" }} />
             </>
         ))}
+
         <Alert inset type="info">
             Justify Content
         </Alert>
         {["flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly"].map((jc: any) => (
             <>
                 <div style={{ display: "flex", justifyContent: jc }}>
+                    <Buttons />
+                </div>
+                <Divider dense style={{ margin: "8px" }} />
+            </>
+        ))}
+
+        <Alert inset type="warning">
+            Align Items
+        </Alert>
+        {["flex-start", "flex-end", "center", "stretch", "baseline"].map((ai: any) => (
+            <>
+                <div style={{ display: "flex", height: "100px", alignItems: ai }}>
                     <Buttons />
                 </div>
                 <Divider dense style={{ margin: "8px" }} />
