@@ -5,9 +5,11 @@ import "./App.css";
 
 const App = () => (
     <div style={{ flex: 1 }}>
-        <div style={{ display: "flex", flexDirection: "row" }}>
-            <Buttons />
-        </div>
+        {["row", "row-reverse", "column", "column-reverse"].map((fd: any) => (
+            <div style={{ display: "flex", flexDirection: fd, borderBottom: "dashed 1px" }}>
+                <Buttons />
+            </div>
+        ))}
     </div>
 );
 
