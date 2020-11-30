@@ -18,6 +18,19 @@ const App = () => (
         </div>
         <Divider dense style={{ margin: "8px" }} />
 
+        <Alert inset type="info">
+            Right Corner Menu
+        </Alert>
+        <div style={{ display: "flex", alignItems: "center", margin: "16px" }}>
+            <div style={{ flexGrow: 1, display: "flex" }}>
+                <Alert type="info" style={{ flex: 1 }}>
+                    All Contents
+                </Alert>
+            </div>
+            <Button style={{ flexGrow: 0, width: "100px", margin: "8px" }}>Icon</Button>
+            <Button style={{ flexGrow: 0, width: "100px", margin: "8px" }}>Menu</Button>
+        </div>
+
         <Alert inset type="success">
             Flex Direction
         </Alert>
