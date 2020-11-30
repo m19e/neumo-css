@@ -6,7 +6,7 @@ import "./App.css";
 const App = () => (
     <div style={{ flex: 1 }}>
         {["row", "row-reverse", "column", "column-reverse"].map((fd: any) => (
-            <div style={{ display: "flex", flexDirection: fd, borderBottom: "dashed 1px" }}>
+            <div style={{ display: "flex", flexDirection: fd }}>
                 <Buttons />
             </div>
         ))}
