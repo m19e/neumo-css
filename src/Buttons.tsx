@@ -3,11 +3,9 @@ import { Button } from "ui-neumorphism";
 
 const Buttons = () => (
     <>
-        <Button style={{ margin: "8px" }}>1</Button>
-        <Button style={{ margin: "8px" }}>2</Button>
-        <Button style={{ margin: "8px" }}>3</Button>
-        <Button style={{ margin: "8px" }}>4</Button>
-        <Button style={{ margin: "8px" }}>5</Button>
+        {[1, 2, 3, 4, 5].map((n) => (
+            <Button style={{ margin: "8px", width: "100px" }}>{n}</Button>
+        ))}
     </>
 );
 
