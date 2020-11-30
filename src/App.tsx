@@ -31,6 +31,18 @@ const App = () => (
             <Button style={{ flexGrow: 0, width: "100px", margin: "8px" }}>Menu</Button>
         </div>
 
+        <Alert inset type="warning">
+            Between Menu
+        </Alert>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <div style={{ display: "flex" }}>
+                <Button text>Left Menu</Button>
+            </div>
+            <div style={{ display: "flex" }}>
+                <Button text>Right Menu</Button>
+            </div>
+        </div>
+
         <Alert inset type="success">
             Flex Direction
         </Alert>
