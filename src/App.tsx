@@ -5,7 +5,7 @@ import "ui-neumorphism/dist/index.css";
 import "./App.css";
 
 const App = () => (
-    <div style={{ flex: 1 }}>
+    <div style={{ flex: 1, backgroundColor: "#e4ebf5" }}>
         {["row", "row-reverse", "column", "column-reverse"].map((fd: any) => (
             <>
                 <div style={{ display: "flex", flexDirection: fd }}>
