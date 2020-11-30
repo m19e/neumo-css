@@ -41,6 +41,18 @@ const App = () => (
                 <Divider dense style={{ margin: "8px" }} />
             </>
         ))}
+
+        <Alert inset type="error">
+            Align Content
+        </Alert>
+        {["flex-start", "flex-end", "center", "stretch", "space-between", "space-around"].map((ac: any) => (
+            <>
+                <div style={{ display: "flex", flexWrap: "wrap", height: "200px", alignContent: ac }}>
+                    <Buttons w={"200px"} />
+                </div>
+                <Divider dense style={{ margin: "8px" }} />
+            </>
+        ))}
     </div>
 );
 
